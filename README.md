@@ -15,8 +15,8 @@ module or application. That should also include any code that I've received perm
 Requirements
 ============
 
-*Built with API v16, but might work with newer
-*Needs the [ColorPickerPreference](https://github.com/agentdr8/ColorPickerPreference) class that I commited to my github. There are slight changes that I made to allow
+* Built with API v16, but might work with newer
+* Needs the [ColorPickerPreference](https://github.com/agentdr8/ColorPickerPreference) class that I commited to my github. There are slight changes that I made to allow
 for manual hex color entry. 
 
 Screens
