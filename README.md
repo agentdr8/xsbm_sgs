@@ -1,5 +1,5 @@
 ========================================
-Xposed module for Samsung Galaxy devices
+Xposed mod for Samsung Galaxy devices
 ========================================
 
 Running Touchwiz-based ROMs
@@ -18,6 +18,10 @@ Requirements
 Built with API v16, but might work with newer
 Needs the ColorPickerPreference class that I commited to my github. There are slight changes that I made to allow
 for manual hex color entry.
+
+Screens
+=======
+* .. image:: https://github.com/agentdr8/xsbm_sgs/raw/master/xsbm-sgs.png
 
 =====================
 The MIT License (MIT)
