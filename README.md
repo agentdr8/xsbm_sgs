@@ -7,7 +7,7 @@ Tested on AT&T S3 and GN2 but others have reported it working (in some capacity)
 
 The code is messy and most likely amateurish, as this was basically my first Xposed module & Android application.
 
-I released it in binary form via the Xposed Repo, Google Play, and XDA forums. I no longer have the time to maintain
+I released it in binary form via the [Xposed Repo](http://repo.xposed.info/module/com.dr8.sbicons.sgs), [Google Play](https://play.google.com/store/apps/details?id=com.dr8.sbicons.sgs), and [XDA forums](http://forum.xda-developers.com/showthread.php?t=2546180). I no longer have the time to maintain
 this project, so instead of letting it die a quiet death, I'm releasing the last version of my code to the public
 for anyone to use. I only ask that you provide proper attribution if you plan on using any of this code in your
 module or application. That should also include any code that I've received permission to use from others.
