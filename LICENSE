@@ -1,16 +1,3 @@
-Xposed module for Samsung Galaxy devices
-
-Running Touchwiz-based ROMs
-Tested on AT&T S3 and GN2 but others have reported it working (in some capacity) on other Samsung devices.
-
-The code is messy and most likely amateurish, as this was basically my first Xposed module & Android application.
-
-I released it in binary form via the Xposed Repo, Google Play, and XDA forums. I no longer have the time to maintain
-this project, so instead of letting it die a quiet death, I'm releasing the last version of my code to the public
-for anyone to use. I only ask that you provide proper attribution if you plan on using any of this code in your
-module or application. That should also include any code that I've received permission to use from others.
-
-
 The MIT License (MIT)
 
 Copyright (c) [2014] [@agentdr8]
