@@ -1,4 +1,6 @@
+========================================
 Xposed module for Samsung Galaxy devices
+========================================
 
 Running Touchwiz-based ROMs
 Tested on AT&T S3 and GN2 but others have reported it working (in some capacity) on other Samsung devices.
@@ -10,8 +12,16 @@ this project, so instead of letting it die a quiet death, I'm releasing the last
 for anyone to use. I only ask that you provide proper attribution if you plan on using any of this code in your
 module or application. That should also include any code that I've received permission to use from others.
 
+Requirements
+============
 
+Built with API v16, but might work with newer
+Needs the ColorPickerPreference class that I commited to my github. There are slight changes that I made to allow
+for manual hex color entry.
+
+=====================
 The MIT License (MIT)
+=====================
 
 Copyright (c) [2014] [@agentdr8]
 
