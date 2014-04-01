@@ -21,7 +21,7 @@ for manual hex color entry.
 
 Screens
 =======
-* .. image:: https://github.com/agentdr8/xsbm_sgs/raw/master/xsbm-sgs.png
+![ScreenShot](https://raw.githubusercontent.com/agentdr8/xsbm_sgs/master/xsbm_sgs.png)
 
 =====================
 The MIT License (MIT)
