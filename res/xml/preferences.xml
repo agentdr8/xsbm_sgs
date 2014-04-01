@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <de.robv.android.xposed.library.ui.TextViewPreference
+        android:selectable="false"
+        android:title="@string/settings_header" />
+    <de.robv.android.xposed.library.ui.SeparatorPreference height="3" />
+
+    <PreferenceScreen
+        android:key="prefs_tweaks"
+        android:title="@string/ps_sbtitle" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:defaultValue="#7f000000"
+            android:key="tpnotif"
+            android:summary="@string/ps_cb1_summ"
+            android:title="@string/ps_cb1_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:defaultValue="#7f000000"
+            android:key="tpstatus"
+            android:summary="@string/ps_cb2_summ"
+            android:title="@string/ps_cb2_title" />
+</PreferenceScreen>
+    <PreferenceScreen
+        android:key="prefs_clock"
+        android:title="@string/ps_cltitle" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="centerclock"
+            android:summary="@string/ps_cl_cb1_summ"
+            android:title="@string/ps_cl_cb1_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="invisclock"
+            android:summary="@string/ps_cl_cb2_summ"
+            android:title="@string/ps_cl_cb2_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="hideampm"
+            android:summary="@string/ps_cl_cb3_summ"
+            android:title="@string/ps_cl_cb3_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="prefs_battery"
+        android:title="@string/ps_batitle" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="invisbatt"
+            android:summary="@string/ps_ba_cb1_summ"
+            android:title="@string/ps_ba_cb1_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="altcharge"
+            android:summary="@string/ps_ba_cb2_summ"
+            android:title="@string/ps_ba_cb2_title" />
+        <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+        	displayFormat="%d milliseconds"
+            max="1000"
+            min="100"
+            android:defaultValue="350"
+            android:key="charge_delay"
+            android:summary="@string/ps_ba_sb1_summ"
+            android:title="@string/ps_ba_sb1_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="batt_icon_rainbow"
+            android:summary="@string/ps_ba_cb3_summ"
+            android:title="@string/ps_ba_cb3_title" />
+    </PreferenceScreen>
+    <de.robv.android.xposed.library.ui.TextViewPreference
+        android:selectable="false"
+        android:title="@string/icon_header" />
+    <de.robv.android.xposed.library.ui.SeparatorPreference height="3" />
+    <PreferenceScreen
+        android:key="prefs_icons"
+        android:title="@string/ps_istitle" >
+        <PreferenceScreen
+            android:key="prefs_theme"
+            android:title="@string/ps_is_import_title" 
+            android:icon="@drawable/import_img" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.dr8.sbicons.sgs.mod.IconPackActivity"
+                android:targetPackage="com.dr8.sbicons.sgs" />
+        </PreferenceScreen>
+        <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+        	displayFormat="%d px"
+            max="75"
+            min="10"
+            android:defaultValue="50"
+            android:key="icon_size"
+            android:summary="@string/ps_is_sb1_summ"
+            android:title="@string/ps_is_sb1_title" />
+        <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+        	displayFormat="%d bars"
+            max="6"
+            min="4"
+            android:defaultValue="5"
+            android:key="signal_bars"
+            android:summary="@string/ps_is_sb2_summ"
+            android:title="@string/ps_is_sb2_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="framework"
+            android:summary="@string/ps_is_cb5_summ"
+            android:title="@string/ps_is_cb5_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="thirdparty"
+            android:summary="@string/ps_is_cb6_summ"
+            android:title="@string/ps_is_cb6_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="battery"
+            android:summary="@string/ps_is_cb7_summ"
+            android:title="@string/ps_is_cb7_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="signal"
+            android:summary="@string/ps_is_cb8_summ"
+            android:title="@string/ps_is_cb8_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="mobile_data"
+            android:summary="@string/ps_is_cb9_summ"
+            android:title="@string/ps_is_cb9_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wifi"
+            android:summary="@string/ps_is_cb10_summ"
+            android:title="@string/ps_is_cb10_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ringer"
+            android:summary="@string/ps_is_cb14_summ"
+            android:title="@string/ps_is_cb14_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="bluetooth"
+            android:summary="@string/ps_is_cb11_summ"
+            android:title="@string/ps_is_cb11_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="gps"
+            android:summary="@string/ps_is_cb12_summ"
+            android:title="@string/ps_is_cb12_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="to_the_left"
+            android:summary="@string/ps_is_cb13_summ"
+            android:title="@string/ps_is_cb13_title" />
+    </PreferenceScreen>
+
+    <de.robv.android.xposed.library.ui.TextViewPreference
+        android:selectable="false"
+        android:title="@string/color_header" />
+    <de.robv.android.xposed.library.ui.SeparatorPreference height="3" />
+
+    <PreferenceScreen
+        android:key="prefs_color"
+        android:title="@string/ps_cstitle" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:defaultValue="#ff35b5e5"
+            android:key="clock_text_color"
+            android:summary="@string/ps_cs_cp3_summ"
+            android:title="@string/ps_cs_cp3_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:defaultValue="#ff35b5e5"
+            android:key="batt_text_color"
+            android:summary="@string/ps_cs_cp4_summ"
+            android:title="@string/ps_cs_cp4_title" />
+        <PreferenceScreen
+            android:key="prefs_battery_color_ranges"
+            android:summary="@string/ps_cs_br_summ"
+            android:title="@string/ps_cs_br_title" >
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffff0000"
+                android:key="batt_color_0-20"
+                android:summary="@string/ps_cs_br_cp1_summ"
+                android:title="@string/ps_cs_br_cp1_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffff6600"
+                android:key="batt_color_21-40"
+                android:summary="@string/ps_cs_br_cp2_summ"
+                android:title="@string/ps_cs_br_cp2_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffff00"
+                android:key="batt_color_41-60"
+                android:summary="@string/ps_cs_br_cp3_summ"
+                android:title="@string/ps_cs_br_cp3_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ff00ff00"
+                android:key="batt_color_61-80"
+                android:summary="@string/ps_cs_br_cp4_summ"
+                android:title="@string/ps_cs_br_cp4_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ff35b5e5"
+                android:key="batt_color_81-100"
+                android:summary="@string/ps_cs_br_cp5_summ"
+                android:title="@string/ps_cs_br_cp5_title" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="prefs_icon_colors"
+            android:title="@string/ps_ictitle" >
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="fwcolor"
+                android:summary="@string/ps_ic_cp1_summ"
+                android:title="@string/ps_ic_cp1_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="appscolor"
+                android:summary="@string/ps_ic_cp2_summ"
+                android:title="@string/ps_ic_cp2_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="signalcolor"
+                android:summary="@string/ps_ic_cp3_summ"
+                android:title="@string/ps_ic_cp3_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="mobilecolor"
+                android:summary="@string/ps_ic_cp4_summ"
+                android:title="@string/ps_ic_cp4_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="wificolor"
+                android:summary="@string/ps_ic_cp5_summ"
+                android:title="@string/ps_ic_cp5_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="ringcolor"
+                android:summary="@string/ps_ic_cp8_summ"
+                android:title="@string/ps_ic_cp8_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="gpscolor"
+                android:summary="@string/ps_ic_cp6_summ"
+                android:title="@string/ps_ic_cp6_title" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="true"
+                showCheckbox="true"
+                android:defaultValue="#ffffffff"
+                android:key="misccolor"
+                android:summary="@string/ps_ic_cp7_summ"
+                android:title="@string/ps_ic_cp7_title" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <de.robv.android.xposed.library.ui.TextViewPreference
+        android:selectable="false"
+        android:title="@string/about_header" />
+    <de.robv.android.xposed.library.ui.SeparatorPreference height="3" />
+    <PreferenceScreen
+        android:key="prefs_about"
+        android:title="@string/ps_abtitle" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.dr8.sbicons.sgs.mod.AboutActivity"
+            android:targetPackage="com.dr8.sbicons.sgs" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

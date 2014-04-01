@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_tpsb_names">
+        <item>@string/ar_ft</item>
+        <item>@string/ar_px</item>
+    </string-array>
+    <string-array name="pref_tpsb_values">
+        <item>full</item>
+        <item>1px</item>
+    </string-array>
+
+</resources>

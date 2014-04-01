@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">67dp</dimen>
+    <dimen name="section_div_height">20dp</dimen>
+    <dimen name="top_padding">15dp</dimen>
+    <dimen name="bottom_padding">15dp</dimen>
+    <dimen name="left_padding">5dp</dimen>
+    <dimen name="right_padding">10dp</dimen>
+</resources>

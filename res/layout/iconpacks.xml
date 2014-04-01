@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:longClickable="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/zipitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:drawableLeft="@drawable/icon_zip"
+        android:drawablePadding="@dimen/right_padding"
+        android:longClickable="false"
+        android:paddingBottom="@dimen/bottom_padding"
+        android:paddingTop="@dimen/top_padding"
+        android:textSize="@dimen/section_div_height" >
+    </TextView>
+
+</LinearLayout>

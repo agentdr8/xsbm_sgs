@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Xposed StatusBar Mods - SGS</string>
+    <string name="launcher_name">Xposed StatusBar Settings</string>
+    <string name="settings_header">System tweaks</string>
+    <string name="icon_header">Statusbar icon settings &amp; iconpack import</string>    
+    <string name="color_header">All icon/text color options below</string>
+    <string name="about_header">Shoutouts</string>
+    <string name="item_detail">Long-press item for more details</string>
+    <string name="app_shortname">XSBM (SGS)</string>
+    <string name="author">agentdr8</string>
+    <string name="credits">CREDITS\n\n
+	    Thanks to rovo89 for making the Xposed Framework!\n\n
+	    Thanks to wangtang2k for making the AT&amp;T iconset, which inspired me to make this mod!\n\n
+	    Thanks to C3C076 for the center clock mod!\n\n
+	    Thanks to snachez for making the default white iconpack!\n\n
+	    Thanks to all of the XDA users that find this mod useful!\n\n
+	    And a special thanks to those that have donated. Never required, but always appreciated!
+	</string>
+	
+    <string name="ar_ft">Fully transparent</string>
+    <string name="ar_px">1px gray divider</string>	
+    
+	<string name="ps_sbtitle">Statusbar/Notification</string>
+	<string name="ps_cb1_summ">Override notification background (set color in Color Settings)</string>
+	<string name="ps_cb1_title">Notification Background</string>
+	<string name="ps_cb2_summ">Transparent statusbar background (set color in Color Settings)</string>
+	<string name="ps_cb2_title">Transparent Statusbar</string>
+	<string name="ps_lp1_summ">Choose between fully transparent and 1px gray divider</string>
+	<string name="ps_lp1_title">Transparent Statusbar Style</string>
+	<string name="ps_cb3_summ">Transparent Sense Navbar background</string>
+	<string name="ps_cb3_title">Transparent Sense Navbar</string>
+	<string name="ps_lp2_summ">Choose between fully transparent and 1px gray divider</string>
+	<string name="ps_lp2_title">Transparent Sense Navbar Style</string>
+	
+	<string name="ps_cltitle">Clock</string>
+	<string name="ps_cl_cb1_summ">Moves clock to center</string>
+	<string name="ps_cl_cb1_title">Center Clock</string>
+	<string name="ps_cl_cb2_summ">Removes clock from statusbar</string>
+	<string name="ps_cl_cb2_title">Remove Clock</string>
+	<string name="ps_cl_cb3_summ">Removes AM/PM from clock</string>
+	<string name="ps_cl_cb3_title">Hide AM/PM</string>
+	
+	<string name="ps_batitle">Battery</string>
+	<string name="ps_ba_cb1_summ">Removes battery icon from statusbar</string>
+	<string name="ps_ba_cb1_title">Remove Battery</string>
+	<string name="ps_ba_cb2_summ">Show current battery percent after charging animation</string>
+	<string name="ps_ba_cb2_title">Show battery % charging</string>
+	<string name="ps_ba_sb1_summ">Amount of display time between charge animation frames</string>
+	<string name="ps_ba_sb1_title">Battery charging animation delay</string>
+	<string name="ps_ba_cb3_summ">Colorizes battery icons based on current charge level (works best with light-colored battery icons; overrides fixed color selection)</string>
+	<string name="ps_ba_cb3_title">Battery Icon Colorize</string>
+	<string name="ps_ba_cb4_summ">Colorizes stock text battery % based on current charge level (overrides fixed color selection)</string>
+	<string name="ps_ba_cb4_title">Text Battery Colorize</string>
+	
+	<string name="ps_istitle">Icon Settings</string>
+	<string name="ps_is_import_title">Select Iconpack to Import</string>
+	<string name="ps_is_sb1_summ">Scale the icons to the selected pixel size and re-import</string>
+	<string name="ps_is_sb1_title">Icon Scaling</string>
+	<string name="ps_is_ichide">Hidden Icon Settings</string>
+	<string name="ps_is_ich_cb1_summ">Hide the silent/vibrate icons</string>
+	<string name="ps_is_ich_cb1_title">Silent/Vibrate</string>
+	<string name="ps_is_ich_cb3_summ">Hide the smart scroll/stay</string>
+	<string name="ps_is_ich_cb3_title">Smart Scroll</string>
+	<string name="ps_is_sb2_summ">Override the number of displayed phone signal bars</string>
+	<string name="ps_is_sb2_title">Signal Bars</string>
+	<string name="ps_is_cb1_summ">Hide the mobile data icons when connected to Wifi</string>
+	<string name="ps_is_cb1_title">Auto-hide Mobile Data</string>
+	<string name="ps_is_cb2_summ">Check this if mobile data icons don\&apos;t override when that option is enabled</string>
+	<string name="ps_is_cb2_title">Alternate SystemUI support</string>
+	<string name="ps_is_cb3_summ">Hide the missing SIM card icon</string>
+	<string name="ps_is_cb3_title">Remove no-SIM Icon</string>
+	<string name="ps_is_cb4_summ">Hide the cellular signal bars</string>
+	<string name="ps_is_cb4_title">Remove Signal Icons</string>
+	<string name="ps_is_cb5_summ">Override framework icons</string>
+	<string name="ps_is_cb5_title">Framework</string>
+	<string name="ps_is_cb6_summ">Override 3rd-party app icons</string>
+	<string name="ps_is_cb6_title">3rd-Party Apps</string>
+	<string name="ps_is_cb7_summ">Override battery icons</string>
+	<string name="ps_is_cb7_title">Battery</string>
+	<string name="ps_is_cb8_summ">Override cellular signal bars</string>
+	<string name="ps_is_cb8_title">Signal Bar</string>
+	<string name="ps_is_cb9_summ">Override mobile data icons</string>
+	<string name="ps_is_cb9_title">Mobile Data</string>
+	<string name="ps_is_cb10_summ">Override Wifi signal icons</string>
+	<string name="ps_is_cb10_title">Wifi</string>
+	<string name="ps_is_cb14_summ">Override Silent/Vibrate icons</string>
+	<string name="ps_is_cb14_title">Silent/Vibrate</string>
+	<string name="ps_is_cb11_summ">Override Bluetooth icons</string>
+	<string name="ps_is_cb11_title">Bluetooth</string>
+	<string name="ps_is_cb12_summ">Override GPS icons</string>
+	<string name="ps_is_cb12_title">GPS</string>
+	<string name="ps_is_cb13_summ">Override all other icons to the left of GPS (Sync, Headphone, Ringer, e911, etc.)</string>
+	<string name="ps_is_cb13_title">Misc Status Icons</string>
+	
+	<string name="ps_cstitle">Color Settings</string>
+	<string name="ps_cs_cp1_summ">Color of the notification pulldown bg</string>
+	<string name="ps_cs_cp1_title">Notification bg color</string>
+	<string name="ps_cs_cp2_summ">Color of the statusbar bg</string>
+	<string name="ps_cs_cp2_title">Statusbar bg color</string>
+	<string name="ps_cs_cp3_summ">Color of the clock if visible</string>
+	<string name="ps_cs_cp3_title">Clock color</string>
+	<string name="ps_cs_cp4_summ">Fixed color of the battery icons</string>
+	<string name="ps_cs_cp4_title">Battery % color</string>
+	<string name="ps_cs_cp5_summ">Color of the text battery during charging</string>
+	<string name="ps_cs_cp5_title">Battery % charge color</string>
+	<string name="ps_cs_br_summ">Applies to colorized battery icons</string>
+	<string name="ps_cs_br_title">Battery Range Colors</string>
+	<string name="ps_cs_br_cp1_summ">Color for 0&#8211;20% (default: red)</string>
+	<string name="ps_cs_br_cp1_title">0 &#8211; 20</string>
+	<string name="ps_cs_br_cp2_summ">Color for 21&#8211;40% (default: orange)</string>
+	<string name="ps_cs_br_cp2_title">21 &#8211; 40</string>
+	<string name="ps_cs_br_cp3_summ">Color for 41&#8211;60% (default: yellow)</string>
+	<string name="ps_cs_br_cp3_title">41 &#8211; 60</string>
+	<string name="ps_cs_br_cp4_summ">Color for 61&#8211;80% (default: green)</string>
+	<string name="ps_cs_br_cp4_title">61 &#8211; 80</string>
+	<string name="ps_cs_br_cp5_summ">Color for 81&#8211;100% (default: blue)</string>
+	<string name="ps_cs_br_cp5_title">81 &#8211; 100</string>
+	
+	<string name="ps_ictitle">Icon Colors</string>
+	<string name="ps_ic_cp1_summ">Color for framework icons</string>
+	<string name="ps_ic_cp1_title">Framework</string>
+	<string name="ps_ic_cp2_summ">Color for 3rd-party icons</string>
+	<string name="ps_ic_cp2_title">3rd-Party Apps</string>
+	<string name="ps_ic_cp3_summ">Color for phone signal icons</string>
+	<string name="ps_ic_cp3_title">Signal</string>
+	<string name="ps_ic_cp4_summ">Color for mobile data icons</string>
+	<string name="ps_ic_cp4_title">Mobile Data</string>
+	<string name="ps_ic_cp5_summ">Color for wifi icons</string>
+	<string name="ps_ic_cp5_title">Wifi</string>
+	<string name="ps_ic_cp8_summ">Color for silent/vibrate icons</string>
+	<string name="ps_ic_cp8_title">Silent/Vibrate</string>
+	<string name="ps_ic_cp6_summ">Color for GPS icons</string>
+	<string name="ps_ic_cp6_title">GPS</string>
+	<string name="ps_ic_cp7_summ">Color for misc icons</string>
+	<string name="ps_ic_cp7_title">Misc</string>
+	
+	<string name="ps_abtitle">About</string>
+	
+	
+	
+</resources>

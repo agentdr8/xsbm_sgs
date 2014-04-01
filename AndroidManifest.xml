@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dr8.sbicons.sgs"
+    android:versionCode="103"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/sbicons"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity android:name="com.dr8.sbicons.sgs.mod.StatusBarModsSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dr8.sbicons.sgs.mod.IconPackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="file" />                  
+                <data android:host="*" />
+                <data android:mimeType="application/zip" />
+                <data android:pathPattern=".*\\.xsbm\\.zip" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dr8.sbicons.sgs.mod.AboutActivity"></activity>
+        <meta-data android:value="true" android:name="xposedmodule"/>
+        <meta-data android:value="2.0*" android:name="xposedminversion"/>
+        <meta-data android:value="Mod to change statusbar icons &amp; bg transparency, clock visibility, %battery, and other items" android:name="xposeddescription"/>
+        
+    </application>
+
+</manifest>

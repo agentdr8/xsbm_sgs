@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="SdCardPath" severity="ignore">
+        <ignore path="src/com/dr8/sbicons/mod/hax/SystemWide.java" />
+    </issue>
+</lint>
